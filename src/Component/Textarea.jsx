@@ -14,6 +14,8 @@ const Textarea = (props) => {
         console.log("changed in click")
         let newtext= Data.toUpperCase();
         setData(newtext)
+        props.Showalert('Converted to uppercase')
+      
 
 
     }
@@ -21,10 +23,13 @@ const Textarea = (props) => {
         console.log("changed in click")
         let newtext= Data.toLowerCase();
         setData(newtext)
+        props.Showalert('Converted to lowercase')
+     
     }
     const Clickeddd=()=>{
         console.log("changed in click")
         setData("")
+      
     }
 
 
